@@ -1,7 +1,7 @@
 # graphic pipeline
 - vertex processing / geometry stage / vertex shader
- - processes all vertices independently in the same way
- - performs transformations per vertex, computes lighting per vertex
+  - processes all vertices independently in the same way
+  - performs transformations per vertex, computes lighting per vertex
 - geometry shader
  - generates, modifies, discards primitives
 - primitive assembly and rasterization / rasterization stage
