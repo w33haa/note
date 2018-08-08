@@ -1,5 +1,14 @@
 # graphic pipeline
-3D输入
-- 相机参数：
- - 位置，朝向，焦距
-- 物体
+- vertex processing / geometry stage / vertex shader
+ - processes all vertices independently in the same way
+ - performs transformations per vertex, computes lighting per vertex
+- geometry shader
+ - generates, modifies, discards primitives
+- primitive assembly and rasterization / rasterization stage
+ - assembles primitives such as points, lines, triangles
+ - converts primitives into a raster image
+ - generates fragments / pixel candidates
+ - fragment attributes are interpolated from vertices of a primitive
+- fragment processing / fragment shader
+ - processes all fragments independently in the same way
+ - fragments are processed, discarded or stored in the framebuffer
